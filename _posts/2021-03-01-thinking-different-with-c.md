@@ -16,6 +16,56 @@ My usual approach in a higher level language would be to create a dictionary wit
 
 Here is an example in C#
 
+{% highlight C# %}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Dictionary<int, int> wordLengths = new Dictionary<int, int>();
+		string input = Console.ReadLine();
+		
+		List<string> words = input.Split().ToList();
+		
+		foreach(string word in words)
+		{
+			int key = word.Length;
+			if( word.Length > 0)
+			{				
+				if( !wordLengths.ContainsKey(key)) 
+				{
+					wordLengths.Add(key, 1);
+				}
+				else
+				{
+					wordLengths[key] = wordLengths[key] + 1;
+				}
+			}
+		}
+		
+		foreach(KeyValuePair<int, int> entry in wordLengths)
+		{
+			Console.Write(entry.Key);
+			for(int i = 0; i < entry.Value; i++)
+			{
+				Console.Write("-");
+			}
+			Console.WriteLine();
+		}
+	}
+}
+{% endhighlight %}
+
+
+In C it seemed better to have an array of length 26
+and for each letter you incremented the value at the index of 
+the length of the word.  
 
 Here is an example in C:
 {% highlight C %}
@@ -59,6 +109,12 @@ Here is an example in C:
   }
 
 {% endhighlight %}
+
+
+Conclusion:  
+Despite these solutions being possible in both languagues.
+The restrictions of C push you to find different solutions that 
+you would usually reach for in higher level languages. 
 
 
 [c-programming]:https://en.wikipedia.org/wiki/The_C_Programming_Language
