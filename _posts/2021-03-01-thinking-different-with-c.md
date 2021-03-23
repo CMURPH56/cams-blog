@@ -2,10 +2,13 @@
 layout: post
 title: "Problem solving with The C Programming Language"
 ---
-Most of my development career I have been working with higher 
-level programming languages. Recently I have started working
-through [The C Programming Language][c-programming] by Kernighan and 
-Ritchie.  
+Most of my development career, I have been working with higher 
+level programming languages.
+
+
+I wanted to learn a new programming language, that would help me 
+grow as a developer. I landed on C since it is a middle level language. I started working through 
+[The C Programming Language][c-programming] by Brian Kernighan and Dennis Ritchie.     
 
 One of the problems illustrated the simplicity of the way that C makes you think:
 
