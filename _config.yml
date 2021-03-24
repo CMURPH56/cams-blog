@@ -23,7 +23,7 @@ email: CamMurphy195@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Cam Murphy's blog expect tech and non-tech related content
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "/cams-blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  cmurph56
 
