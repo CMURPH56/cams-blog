@@ -66,7 +66,7 @@ public class Program
 {% endhighlight %}
 
 
-In C it seemed better to have an array of length 26
+In C it seemed better to have an array of the length of the longest word
 and for each letter you incremented the value at the index of 
 the length of the word.  
 
